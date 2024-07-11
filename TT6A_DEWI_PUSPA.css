@@ -1,0 +1,320 @@
+/* CSS RESET */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(245, 212, 223);
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url(/image/netf1.png);
+        background-position: 0% 50%;
+    }
+    50% {
+        background-image: url(/image/spo1.jpg);
+        background-position: 25% 50%;
+    }
+    100% {
+        background-image: url(/image/zoom1.jpg);
+        background-position: 50% 100%;
+    }
+  }
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.welkam {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    animation: float 2s infinite;
+    color: goldenrod;
+}
+
+h2, h3 {
+    color: rgb(241, 46, 75);
+}
+
+footer {
+    background-color: rgb(189, 140, 189);
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.note {
+    box-sizing: border-box;
+    border: 5px dotted lightcoral;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Francois One", sans-serif;font-weight: 400;    font-style: normal;
+    color: red;
+    animation: blink 3s infinite;
+}
+
+.gambar-artikel {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s;
+}
+
+.gambar-artikel:hover {
+    transform: scale(1.1);
+}
+
+.gambar-dokum {
+    width: 200px;
+    display: inline;
+}
+
+mark {
+    background-color: plum;
+    color: black;
+    opacity: 90%;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.21);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgb(252, 239, 241);
+}
+
+.kiri {
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: lightpink;
+    text-align: center;
+    padding: 60px;
+    color: white;
+    font-size: 20px;
+    background-image: url(/image/netf1.png);
+    background-size: cover;
+    opacity: 90%;
+    text-shadow: 0px 6px 8px black;
+    animation: slideBackground 20s linear infinite;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: rgb(220, 103, 120);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+#content {
+    flex-grow: 5;
+}
+
+#catalogue {
+    gap: 10px;
+    max-width: 100%;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    max-width: 100%;
+}
+
+@keyframes colorChange {
+    0% {
+        color: lightcoral;
+    }
+    50% {
+        color: lightsalmon;
+    }
+    100% {
+        color: lightpink;
+    }
+}
+
+.hepisoping {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    animation: colorChange 3s infinite;
+    text-align: center;
+}
+
+.gambar-harga {
+    width: 300px;
+    max-width: 100%;
+    height: fit-content;
+    transition: transform 0.3s;
+}
+
+.gambar-harga:hover {
+    transform: scale(1.3);
+}
+
+.testi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gambar-testi {
+    height: fit-content;
+    flex-direction: 1;
+    max-height: 100%;
+    max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.gambar-testi:hover {
+    transform: scale(1.5);
+}
+
+aside {
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.21);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    flex-grow: 1;
+    background-color: rgb(252, 239, 241);
+}
+
+aside header {
+    text-align: center;
+    object-position: center;
+}
+
+aside table {
+    border-collapse: collapse;
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.table-price th {
+    background-color: lightpink;
+}
+
+.table-price td {
+    background-color: rgb(248, 218, 243);
+}
+
+.socmed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wa {
+    height: fit-content;
+    flex-direction: 1;
+    max-height: 100%;
+    max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.wa:hover {
+    transform: scale(1.2);
+}
+
+.ig {
+    height: fit-content;
+    flex-direction: 1;
+    max-height: 100%;
+    max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.ig:hover {
+    transform: scale(1.2);
+}
+
+.x {
+    height: fit-content;
+    flex-direction: 1;
+    max-height: 100%;
+    max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.x:hover {
+    transform: scale(1.2);
+}
+
+.table-aside {
+    object-position: center;
+}
+
+.table-aside th {
+    text-align: right;
+    background-color: lightpink;
+}
+
+.table-aside td {
+    background-color: rgb(255, 205, 254);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    main {
+        flex-wrap: wrap;
+    }
+    #content, aside {
+        width: 100%;
+    }
+}
